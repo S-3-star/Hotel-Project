@@ -1,47 +1,14 @@
 import React from "react";
 import Banner from "../Component/Banner";
-import Header from "../Component/Header";
-import ProductCard from "../Component/ProductCard";
+import HotelCard from "../Component/HotelCard";
+
 
 function Home() {
   return (
-    <div>
-      <Header />
+    <div>    
       <Banner />
-
-      {/* Product Section */}
-      <div className="flex justify-center gap-8 flex-wrap my-12">
-        <ProductCard
-          image="/p.jpg"
-          name="Londrilar Sofa"
-          price="$2000"
-          address="Pulchowk"
-        />
-
-        <ProductCard
-          image="/h.jpg"
-          name="Soft sofa"
-          price="$850"
-          address="Baneshwor"
-        />
-
-        <ProductCard
-          image="/v.jpg"
-          name="Luxury Table"
-          price="$1200"
-          address="Lalitpur"
-        />
-
-        <ProductCard
-          image="/m.jpg"
-          name="Modern Table"
-          price="$1200"
-          address="Lalitpur"
-        />
+      <HotelCard/>
       </div>
-
-   
-    </div>
   );
 }
 
