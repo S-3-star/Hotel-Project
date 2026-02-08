@@ -1,51 +1,14 @@
-// import React from 'react'
-// import Banner from './Component/Banner'
-// import Header from './Component/Header'
-// import ProductCard from './Component/ProductCard';
-
-// function App() {
-//   return (
-//     <div>
-//       <Header />
-//       <Banner />
-//       <div className="flex justify-center gap-8 flex-wrap my-12">
-//         <ProductCard
-//           image="/p.jpg"
-//           name="Londrilar Sofa"
-//           price="$2000"
-//           address="Pulchowk"
-//         />
-
-//         <ProductCard
-//           image="/h.jpg"
-//           name="Soft sofa"
-//           price="$850"
-//           address="Baneshwor"
-//         />
-
-//         <ProductCard
-//           image="/v.jpg"
-//           name="Luxury Table"
-//           price="$1200"
-//           address="Lalitpur"
-//         />
-
-//         <ProductCard
-//           image="/m.jpg"
-//           name="Modern Table"
-//           price="$1200"
-//           address="Lalitpur"
-//         />
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Routes, Route } from "react-router";
 import Home from "./page/Home";
 import PublicLayout from "./layout/PublicLayout";
+import About from "./page/About";
+import Room from "./page/Room";
+import Amenities from "./page/Amenities";
+import Dining from "./page/Dining";
+import ContactUs from "./page/ContactUs";
+import Gallery from "./page/Gallery";
 // import Contact from "./page/Contact";
 
 export default function App() {
@@ -53,7 +16,12 @@ export default function App() {
     <Routes>
       <Route path="/" element={<PublicLayout />}>
         <Route index element={<Home />} />
-        {/* <Route path="contact" element={<Contact />} /> */}
+        <Route path="About" element={<About />} />
+        <Route path="Room" element={<Room />} />
+        <Route path="Amenities" element={<Amenities />} />
+        <Route path="Dining" element={<Dining />} />
+        <Route path="ContactUs" element={<ContactUs />} />
+        <Route path="Gallery" element={<Gallery/>} />
       </Route>
     </Routes>
   );
