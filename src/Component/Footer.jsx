@@ -10,7 +10,7 @@ function Footer() {
           {/* Hotel Info */}
           <div>
             <p className="text-2xl font-semibold text-gray-800 mb-2">
-              🏨 Hotel Peninsula
+            Hotel Peninsula
             </p>
             <p className="text-gray-600">Pokhara</p>
             <p className="text-amber-600 text-lg mt-2">+977 9876543210 / 56</p>
